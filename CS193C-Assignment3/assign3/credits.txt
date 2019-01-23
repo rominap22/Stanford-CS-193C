@@ -1,0 +1,4 @@
+The cards are by David Bellot and were found on the Wikimedia website. 
+They are distributed under GNU Lesser General Public License.
+
+The data found in the colleges.js file is from US News & World Report’s Best Colleges 2015 version.

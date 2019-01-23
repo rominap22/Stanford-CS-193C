@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Configure Your GT Super Sportscar</title>
+	<link href = "zcar.css" rel = "stylesheet" />
+</head>
+<body>
+	<script src = "zcar.js"></script>
+	<h1>Configure Your GT Super Sportscar</h1>
+	<form id = "carCalculations" onsubmit = "return false">
+	<!--CONFIGURATION-->
+	<div id= "configuration">
+	<div class="boxes">
+		<h2>CONFIGURATION</h2>
+	</div>
+	
+	<div class="row">
+		<div class="column">
+			<div class="row">
+				<div class="column">$17,790.00</div>
+			</div>
+			<div class="row">
+				<div class="column">$18,590.00</div>
+			</div>
+			<div class="row">
+				<div class="column">$22,455.00</div>
+			</div>
+			<div class="row">
+				<div class="column">$23,455.00</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<input type="radio" name="config" id="config" value="GT Manual">
+			<label for="config">GT Manual</label>
+	</div>
+	<div>
+		<input type="radio" name="config" id="config1" value="GT Automatic">
+			<label for="config1">GT Automatic</label>
+	</div>
+	<div>
+		<input type="radio" name="config" id="config2" value="GT-S Manual">
+			<label for="config2">GT-S Manual</label>
+	</div>
+	<div>
+		<input type="radio" name="config" id="config3" value="GT-S Sportshift">
+			<label for="config3">GT-S Sportshift</label>
+	</div>
+	</div>
+	<!--FACTORY OPTIONS-->
+	<div id = "factoryoptions">
+	<div class="boxes">
+		<h2>FACTORY OPTIONS</h2>
+	</div>
+	
+	<div class="row">
+		<div class="column">
+			<div class="row">
+				<div class="column">$1235.00</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<input type="radio" name="combo" id="combo" value="Option Combo #1">
+			<label for="combo">Option Combo #1</label>
+			<ul>
+				<li>Power Windows, Doors, Cruise Control</li>
+			</ul>
+	</div>
+	<div class="row">
+		<div class="column">
+			<div class="row">
+				<div class="column">$3354.00</div>
+			</div>
+		</div>
+		</div>
+	<div>
+		<input type="radio" name="combo" id="combo1" value="Option Combo #2">
+			<label for="combo1">Option Combo #2</label>
+			<ul>
+				<li>Rear Spoiler and Fog Lamps</li>
+				<li>Keyless Entry</li>
+				<li>Power Tilt & Slide Moonroof</li>
+				<li>Power Windows, Doors, Cruise Control</li>
+			</ul>
+	</div>
+	<div class="row">
+		<div class="column">
+			<div class="row">
+				<div class="column">$0</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<input type="radio" name="combo" id="combo2" value="No Combo">
+			<label for="combo2">No Combo</label>
+	</div>
+	</div>
+	<!--DEALER OPTIONS-->
+	<div id = "dealeroptions">
+	<div class="boxes">
+		<h2>DEALER OPTIONS</h2>
+	</div>
+	
+	<div class="row">
+		<div class="column">
+			<div class="row">
+				<div class="column">$550.00</div>
+			</div>
+			<div class="row">
+				<div class="column">$399.00</div>
+			</div>
+			<div class="row">
+				<div class="column">$295.00</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<input type="checkbox" name="dealer" id="dealer" value="Upgraded Stereo System">
+			<label for="dealer">Upgraded Stereo System</label>
+	</div>
+	<div>
+		<input type="checkbox" name="dealer1" id="dealer1" value="VIP Security System">
+			<label for="dealer1">VIP Security System</label>
+	</div>
+	<div>
+		<input type="checkbox" name="dealer2" id="dealer2" value="Auto-Dimming Mirror">
+			<label for="dealer2">Auto-Dimming Mirror</label>
+	</div>
+	</div>
+	<!--TOTAL PRICE-->
+	<div id = "totalprice">
+		<div class="price">
+			<h2>TOTAL PRICE</h2>
+		</div>
+		<div class="row">
+		<div class="column">
+			<input type="submit" name="calculate" id="calculate" value="Calculate Total" onclick="displayCarPrice()">
+		</div>
+		</div>
+		<input type = "text" name = "textbox" id = "textbox">
+	
+	</div>
+	<!--CHOOSE A COLOR-->
+	<div id = "chooseacolor">
+	<div class="boxes">
+		<h2 id="colorheading">CHOOSE A COLOR</h2>
+	</div>
+	
+	<div class="row">
+		<div class="column">
+			<script>
+				function dropdown(imageid, newimage) {
+					document.getElementById(imageid).src = "./" + newimage + ".jpg";
+				}
+			</script>
+		</div>
+	</div>
+	<div class="row">
+		<div class="row">
+		<div class="column">
+			<div class="row">
+				<div class="column"><img src = "red.jpg" id = "car" alt="red car" width="250" height="70"/></div>
+			</div>
+	</div>
+		<select name = "cars" onChange="dropdown('car', this.value)">
+			<option value="Red">Red</option>
+			<option value="Blue">Blue</option>
+			<option value="Silver">Silver</option>
+			<option value="White">White</option>
+			<option value="Black">Black</option>
+		</select>
+	
+	</div>
+	</div>
+	</div>
+	</form>
+</body>
+</html>

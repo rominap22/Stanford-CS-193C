@@ -1,0 +1,45 @@
+body {
+  font-family: sans-serif;
+}
+#theEntireThing {
+  display: flex;
+}
+#search {
+   margin-left: 50px;
+}
+#updateButton {
+  margin-top: 20px;
+  font-size: 12pt;
+  padding-right: 10px;
+  padding-left: 10px;
+  border: 1px solid black;
+}
+h1 {
+  font-size: 28pt;
+}
+.type {
+  margin-left: 20px;
+}
+thead {
+  background-color: black;
+  color: white;
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+th, td {
+  padding: 5px;
+}
+th + th {
+  border-left: 1px solid white;
+}
+td + td {
+  border-left: 1px solid black;
+}
+.toColor {
+  background-color: #D3D3D3;
+}
+span {
+  font-size: 15pt;
+}

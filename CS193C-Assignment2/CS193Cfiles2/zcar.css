@@ -1,0 +1,77 @@
+body {
+	font-family: sans-serif;
+}
+h1 {
+}
+h2 {
+	color: white;
+	
+	background-color: #808080;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	padding-right: 0px;
+	font-size: 12pt;
+	
+	margin-left: 10px;
+	margin-right: 150px;
+	margin-top: 170px;
+	margin-bottom: 10px;
+	
+    box-sizing: border-box;
+	margin-top: 0px;
+	margin-left: 0px;
+	width: 160px;
+	white-space: nowrap;
+}
+#configuration {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-collapse: collapse;
+	border-width: thin;
+	
+	padding: 5px;
+    box-sizing: border-box;
+	margin-top: 0px;
+	
+	float: left;
+}
+.column {
+	float: right;
+}
+#factoryoptions, #dealeroptions, #totalprice {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-collapse: collapse;
+	border-width: thin;
+	
+	padding: 5px;
+	box-sizing: border-box;
+	margin-top: 10px;
+	margin-right: 0px;
+	clear: both;
+	float: left;
+}
+#chooseacolor {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-collapse: collapse;
+	border-width: thin;
+
+	padding: 5px;
+	margin-top: -491px;
+	margin-left: 20px;
+	float: left;
+}
+li {
+	font-size: 8pt;
+}
+#totalprice {
+	margin-bottom: 20px;
+}

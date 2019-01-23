@@ -1,0 +1,36 @@
+div {
+	float: left;
+	width: 320px;
+    padding: 10px;
+    padding-top: 7px;
+    border: 10px;
+    border-bottom: 0;
+    margin-left: 10px;
+    margin-top: 0;
+}
+body {
+	font-family: sans-serif;
+}
+h1 {
+	text-align: center;
+}
+p {
+	display: block;
+	flex-wrap: wrap;
+}
+a:hover {
+	animation-duration: 4s;
+	animation-iteration-count: 50;
+	animation-name: zoom-in;
+}
+@keyframes zoom-in {
+	from {
+		font-size: 25pt;
+	}
+	to {
+		font-size: 75pt;
+	}
+}
+span {
+	color: red;
+}

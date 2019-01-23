@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Arrow Example</title>
+</head>
+<body>
+<p>This is an example file, you do not need to modify it.</p>
+<input type="button" value="Traditional" id="traditional" />
+<input type="button" value="Arrow" id="arrow" />
+<script>
+    // here is how an event handler is tradtionally written
+    // we explicitly define a function and then assign that
+    // function as an event handler.
+    function handleTradition() {
+        alert("Traditional Button Clicked");
+    }
+
+    document.getElementById("traditional").addEventListener(
+        "click",
+        handleTradition
+    );
+
+    // with arrow functions, I do it all in one step.
+    document.getElementById("arrow").addEventListener(
+        "click",
+        () => {
+            alert("Arrow Button Clicked");
+        }
+    )
+</script>
+</body>
+</html>

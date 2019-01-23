@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title>Bay Area Colleges and Universities</title>
+	<link rel="stylesheet" type="text/css" href="college.css">
+</head>
+<body id = "body">
+  <script src="college.js" defer></script>
+  <h1>Bay Area Colleges and Universities</h1>
+  <div id="theEntireThing">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th><th>SAT High</th><th>SAT Low</th><th>Tuition</th>
+        </tr>
+      </thead>
+      <tbody id="updatedTable"></tbody>
+    </table>
+    <div id="search">
+      <table id="searchcritera">
+        <thead>
+          <tr>
+            <th>Search Criteria</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <input class="type" type="radio" name="type" value="public">Public
+              <input class="type" type="radio" name="type" value="private">Private
+              <input class="type" type="radio" name="type" value="">Don't Care
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>Maximum Tuition</span><br>leave blank for don't care
+              <input id="textboxTuition" type="text" name="tuition">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>Maximum High SAT</span><br>leave blank for don't care
+              <input id="textboxHigh" type="text" name="highSAT">
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <span>Maximum Low SAT</span><br>leave blank for don't care
+              <input id="textboxLow" type="text" name="lowSAT">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <input id="updateButton" type="submit" value="Update">
+    </div>
+  </div>
+</body>
+</html>
